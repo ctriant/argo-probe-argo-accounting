@@ -1,5 +1,5 @@
 Name:		argo-probe-argo-servicestatus
-Version:	0.1.0
+Version:	0.1.1
 Release:	1%{?dist}
 Summary:	Monitoring scripts that check service status
 License:	GPLv3+
@@ -30,6 +30,8 @@ install -m 755 check_status.py %{buildroot}/%{_libexecdir}/argo/probes/argo-serv
 %attr(0755,root,root) /%{_libexecdir}/argo/probes/argo-servicestatus/check_status.py
 
 %changelog
+* Tue May 24 2022 Katarina Zailac <katarina.zailac@gmail.com> - 0.1.1-1
+- ARGO-3840 Fix wrong exit status code
 * Mon May 16 2022 Katarina Zailac <katarina.zailac@gmail.com> - 0.1.0-1
 - Initial version of the package.
 
