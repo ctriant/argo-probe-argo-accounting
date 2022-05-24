@@ -34,4 +34,3 @@ install -m 755 check_status.py %{buildroot}/%{_libexecdir}/argo/probes/argo-serv
 - ARGO-3840 Fix wrong exit status code
 * Mon May 16 2022 Katarina Zailac <katarina.zailac@gmail.com> - 0.1.0-1
 - Initial version of the package.
-
